@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>simple crystal game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</head>
+
+<body>
+    <div id="title">
+        <h1>Crystals Collector!</h1>
+    </div>
+    <br>
+    <div id="gameInstructions">
+        <p>You will be given a random number at the start of the game.</p>
+        <br>
+        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+        </p>
+        <br>
+        <p>You win the game by matching your total score to the number shown, you lost the game if your score exceeds the number.
+        </p>
+        <br>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <br>
+        <p>Each time when the game starts, the value of the crystals will change.</p>
+        <br>
+    </div>
+    <br>
+    <div id="guessNumber">
+        <h1>Number to guess:
+            <span id="goalScore"></span>
+        </h1>
+    </div>
+    <br>
+    <div id="gamesPlayed">
+        <p><span id="lastGame"></span></p>
+        <br>
+        <p>Wins:
+            <span id="userWins"></span>
+        </p>
+        <br>
+        <p>Losses:
+            <span id="userLosses"></span>
+        </p>
+    </div>
+    <br>
+    <div id="images">
+        <img src="assets/images/red.png" data-redval="1" class="crystal" id="redCrystal">
+        <img src="assets/images/blue.png" data-blueval="1" class="crystal" id="blueCrystal">
+        <img src="assets/images/yellow.png" data-yellowval="1" class="crystal" id="yellowCrystal">
+        <img src="assets/images/green.png" data-greenval="1" class="crystal" id="greenCrystal">
+    </div>
+    <br>
+    <div id="totalScore">
+        <p>Your total score is:
+            <span id="userScore">0</span>
+        </p>
+    </div>
+
+</body>
+
+</html>
